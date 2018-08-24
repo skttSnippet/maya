@@ -98,8 +98,11 @@ def vertsMorph(newMesh=None, oldMesh=None):
 
 
     # apply the offset value to certian number of vrt in every selected model
-    for k,v in  offsetVertDict.iteritems():
+    for k,v in  offsetVertDict.iteritems(): 
         pm.xform(k,t=v,r=True)
+        mc.select(v)
+        mc.refresh()
+        time.sleep(0.01)
 
     sys.stdout.write('vertsMorph done\n')
     return
