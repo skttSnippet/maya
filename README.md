@@ -1,2 +1,2 @@
-# myMayaModule
+
 more to come
